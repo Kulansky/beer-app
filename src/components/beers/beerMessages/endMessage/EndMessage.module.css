@@ -1,0 +1,16 @@
+.endMessageContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.endMessage b {
+    font-size: 5rem;
+    font-family: Northead;
+}
+
+@media (max-width: 375px) {
+    .endMessage b {
+        font-size: 2.5rem;
+    }
+}

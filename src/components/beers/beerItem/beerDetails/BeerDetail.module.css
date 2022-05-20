@@ -1,0 +1,76 @@
+@import url(styles/appTheme.css);
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.65rem;
+}
+
+.beerDetailWrapper {
+    width: 40%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--primary);
+    border-radius: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.beerName {
+    font-family: 'Northead';
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.beerTagline {
+    font-size: 1.2rem;
+    color: var(--darkBrown);
+}
+
+.beerImgWrapper {
+    -webkit-filter: drop-shadow(0px 5px 5px #222);
+    filter: drop-shadow(0px 5px 5px #222);
+}
+
+.beerImg {
+    height: 480px;
+}
+
+.beerParametresWrapper {
+    display: flex;
+    text-align: center;
+    font-family: 'Northead';
+    gap: 1rem;
+    font-size: 3rem;
+}
+
+.beerDescription {
+    width: 70%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .beerDetailWrapper {
+        width: 85%;
+        margin-bottom: 0.65rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .beerDetailWrapper {
+        width: 90%;
+        border-radius: 2.2rem;
+    }
+
+    .beerImg {
+        height: 400px;
+    }
+}

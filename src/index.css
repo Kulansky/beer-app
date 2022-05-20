@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato&family=PT+Serif:ital@1&family=Roboto:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+
+}
+
+body {
+  background-color: #dfd186;
+}
+
+@font-face {
+  font-family: "Northead";
+  src: local("Northead"),
+    url("./fonts/Northead-0WgdX.ttf") 
+    format("truetype");
+}

@@ -1,0 +1,11 @@
+.loaderMessageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaderMessage b {
+    text-align: center;
+    font-size: 3rem;
+    font-family: Northead;
+}

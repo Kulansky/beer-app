@@ -1,0 +1,101 @@
+@import url(../../styles/appTheme.css);
+
+.background {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0c09;
+}
+
+.ageGateWindow {
+    max-width:95%;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--darkBrown);
+    margin: 10px 0px;
+    border-radius: 5rem;
+    gap: 1.5rem;
+}
+
+.question {
+    text-align: center;
+    font-family: "Northead";
+    color: var(--primary);
+    font-size: 2.5rem;
+    padding: 0 2.5rem;
+    letter-spacing: 3.5px; 
+}
+.bartender {
+    height: 500px;
+    padding-top: 5px;
+    margin-top: 1rem;
+}
+
+span {
+    color: var(--softYellow);
+    font-size: 5.7rem;
+    margin: 0px 12px;
+}
+
+.happyBeer {
+    height: 65px;
+}
+
+.sleepingBeer {
+    height: 65px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 1024px){
+    .bartender {
+    height: 450px;
+}
+}
+@media (max-width:540px){
+.bartender {
+   max-height: 380px;
+}
+
+.buttonsContainer {
+    display: inline-block;
+}
+
+.ageGateWindow {
+    gap: 0.8rem;
+}
+
+.question {
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 376px) {
+    .happyBeer,
+    .sleepingBeer {
+        max-height: 45px;
+    }
+
+    .bartender {
+        max-height: 320px;
+    }
+
+    span {
+        font-size: 4.5rem;
+    }
+}
+
+
+

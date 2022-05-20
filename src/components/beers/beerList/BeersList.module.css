@@ -1,0 +1,15 @@
+@import url(../../../styles/appTheme.css);
+
+.beerListWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+@media (max-width: 375px) {
+    .beerListWrapper {
+        margin-top: 0px;
+        }
+}

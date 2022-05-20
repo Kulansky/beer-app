@@ -1,0 +1,97 @@
+@import url(../../../styles/appTheme.css);
+
+.searchSectionWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.inputWrapper {
+    margin-right: 0.2rem;
+}
+
+input {
+    height: 70px;
+    width: 420px;
+    text-align: center;
+    background-color: var(--primary);
+    border-color: var(--darkBrown);
+    font-size: 1.3rem;
+    border-radius: 2rem;
+}
+
+input:focus {
+    background-color: var(--primary-active);
+    border-color: var(--darkBrown);
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.buttonWrapper {
+    margin-top: 0rem;
+}
+
+.buttonWrapper button {
+    width: 140px;
+    height: 70px;
+    background-color: var(--softYellow);
+    color: black;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid var(--darkBrown);
+    border-radius: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.buttonWrapper button:hover {
+    background-color: var(--orange);
+}
+
+.inputWrapper .input:focus {
+    outline: none;
+    border-color: #2c2a25;
+    background: #f9f1cbdc;
+}
+
+
+
+@media (max-width: 576px) {
+    .searchSectionWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 1rem;
+    }
+
+    input {
+        width: 380px;
+    }
+}
+
+@media (max-width: 375px) {
+    .buttonWrapper button {
+        height: 60px;
+        width: 120px;
+    }
+
+    input {
+        width: 300px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 280px) {
+    input {
+        width: 270px;
+        font-size: 0.9rem;
+    }
+
+    .buttonWrapper button {
+        height: 50px;
+        width: 100px;
+    }
+}
