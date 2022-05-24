@@ -56,7 +56,7 @@ const BeerDetails = () => {
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, stiffness: 800 }}
+                transition={{ duration: 0.6, stiffness: 200 }}
             >
                 <div className={classes.container}>
                     {beerDetails}
