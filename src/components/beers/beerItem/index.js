@@ -1,8 +1,8 @@
 import { useHistory } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import barrelImage from 'assets/barrel.png';
 import classes from './BeerItem.module.css';
+import barrelImage from 'assets/barrel.png'
 
 const Beer = (props) => {
     const history = useHistory();
@@ -16,7 +16,9 @@ const Beer = (props) => {
             <div className={classes.beerWrapper}>
                 <button onClick={() => handleClick()} className={classes.imagesWrapper}>
                     <div className={classes.styledBarrelImage}>
-                        <LazyLoadImage src={barrelImage}
+                        <LazyLoadImage
+                            effect="blur"
+                            src={barrelImage}
                             alt="Barrel"
                             height="300px"
                         />
