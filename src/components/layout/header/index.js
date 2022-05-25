@@ -1,15 +1,8 @@
 import logoImage from 'assets/logo.png'
 import classes from './Header.module.css'
+import scrollToTop from 'utils/scrollToTop';
 
 const Header = () => {
-
-    const scrollToTop = () => {
-        window.scroll({
-            top: 0,
-            behavior: 'smooth',
-        });
-    };
-
     return (
         <div className={classes.header}>
             <img className={classes['main-img']}
@@ -17,7 +10,9 @@ const Header = () => {
                 src={logoImage}
                 alt='beer logo'
             />
-            <span className={classes.logoDescription}>
+            <span className={classes.logoDescription}
+                onClick={scrollToTop}
+            >
                 globo's beers
             </span>
         </div>
