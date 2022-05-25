@@ -6,6 +6,7 @@ import './index.css';
 import './fonts/Northead-0WgdX.ttf';
 import { AgeVerificationContextProvider } from 'contexts/ageVerification-context';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
