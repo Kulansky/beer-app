@@ -1,4 +1,4 @@
-import logoImage from 'assets/logo.png'
+import logoImage from 'assets/images/logo.png'
 import classes from './Header.module.css'
 import scrollToTop from 'utils/scrollToTop';
 

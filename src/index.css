@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato&family=PT+Serif:ital@1&family=Roboto:ital@1&display=swap');
-@import url(styles/appTheme.css);
+@import url('assets/styles/appTheme.css');
 
 @font-face {
   font-family: "Northead";
   src: local("Northead"),
-    url("./fonts/Northead-0WgdX.ttf") 
+    url("assets/fonts/Northead-0WgdX.ttf") 
     format("truetype");
 }
 

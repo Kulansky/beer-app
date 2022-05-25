@@ -2,9 +2,9 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AgeVerificationContext from 'contexts/ageVerification-context'
 import Button from 'components/UI/button';
-import bartenderImage from 'assets/bartender.png';
-import happyBeerImage from 'assets/happyBeer.png';
-import sleepingBeerImage from 'assets/sleepingBeer.png';
+import bartenderImage from 'assets/images/bartender.png';
+import happyBeerImage from 'assets/images/happyBeer.png';
+import sleepingBeerImage from 'assets/images/sleepingBeer.png';
 import classes from './AgeGate.module.css';
 
 const AgeGate = () => {

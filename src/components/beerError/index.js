@@ -1,4 +1,4 @@
-import lostBeer from 'assets/lostBeer.png';
+import lostBeer from 'assets/images/lostBeer.png';
 import classes from './BeerError.module.css';
 import { motion } from 'framer-motion';
 
