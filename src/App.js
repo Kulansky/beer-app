@@ -14,9 +14,7 @@ const App = () => {
       <Route path='/' exact >
         <Redirect to='/welcome' />
       </Route>
-      <Route path='/welcome'>
-        <WelcomePage />
-      </Route>
+      <Route path='/welcome' component={WelcomePage} />
       <Route path='/beers' exact>
         {ctx.userHasEnoughAge && <MainPageBeers />}
         {!ctx.userHasEnoughAge && <Redirect to='/welcome' />}
@@ -26,15 +24,9 @@ const App = () => {
         <BeerDetail />
         ({!ctx.userHasEnoughAge && <Redirect to='/welcome' />})
       </Route>
-      <Route>
-        <ErrorPage />
-      </Route>
+      <Route path='*' component={ErrorPage} />
     </Switch >
   );
 };
 
 export default App;
-
-
-//{ctx.userHasEnoughAge && <MainPageBeers />}
-   //     {!ctx.userHasEnoughAge && <Redirect to='/welcome' />}
