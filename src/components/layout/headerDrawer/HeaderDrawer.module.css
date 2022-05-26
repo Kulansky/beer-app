@@ -1,5 +1,5 @@
 .headerDrawer {
-    min-height: 8rem;
+    min-height: 7.5rem;
 }
 
 @media (max-width: 375px) {
