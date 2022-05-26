@@ -4,7 +4,7 @@ import WelcomePage from 'pages/WelcomePage';
 import MainPageBeers from 'pages/MainPageBeers';
 import BeerDetail from 'pages/BeerDetail';
 import ErrorPage from 'pages/ErrorPage';
-import AgeVerificationContext from 'contexts/ageVerification-context';
+import AgeVerificationContext from 'contexts/ageVerification.context';
 
 const App = () => {
   const ctx = useContext(AgeVerificationContext);

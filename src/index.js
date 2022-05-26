@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import 'index.css';
 import 'assets/fonts/Northead-0WgdX.ttf';
-import { AgeVerificationContextProvider } from 'contexts/ageVerification-context';
+import { AgeVerificationContextProvider } from 'contexts/ageVerification.context';
 
 
 ReactDOM.render(

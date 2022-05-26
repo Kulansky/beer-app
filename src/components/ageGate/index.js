@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import AgeVerificationContext from 'contexts/ageVerification-context';
+import AgeVerificationContext from 'contexts/ageVerification.context';
 import Button from 'components/UI/button';
 import bartenderImage from 'assets/images/bartender.png';
 import happyBeerImage from 'assets/images/happyBeer.png';
