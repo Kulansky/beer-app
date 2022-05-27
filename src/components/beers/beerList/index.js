@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import BeerItem from '../beerItem';
 import EndMessage from "../beerMessages/endMessage";
 import Loader from "../beerMessages/loader";
-import { fetchBeersList, searchBeerName } from "services/beerService";
+import { fetchBeersList, searchBeerName} from "services/beerService";
 import InfiniteScroll from "react-infinite-scroll-component";
 import classes from './BeersList.module.css';
 
@@ -32,14 +32,8 @@ const BeersList = ({ filters }) => {
         getBeers()
     }, []);
 
-    const fetchSecondPageData = async () => {
-        const response = await fetchBeersList(page, 12)
-        const data = await response;
-        return data
-    };
-
     const updateBeers = async () => {
-        const updatePage = await fetchSecondPageData()
+        const updatePage = await fetchBeersList(page, 12)
         setBeers([...beers, ...updatePage]);
 
         if (updatePage.length === 0 || updatePage.length < 12) {
