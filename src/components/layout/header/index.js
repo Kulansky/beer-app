@@ -3,6 +3,14 @@ import classes from './Header.module.css';
 import scrollToTop from 'utils/scrollToTop';
 
 const Header = () => {
+
+    const scrollToTop = () => {
+        window.scroll({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
         <div className={classes.header}>
             <img className={classes['main-img']}
