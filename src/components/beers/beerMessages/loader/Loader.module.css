@@ -1,11 +1,11 @@
 .loaderMessageContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 5rem;
 }
 
 .loaderMessage b {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: Northead;
 }
