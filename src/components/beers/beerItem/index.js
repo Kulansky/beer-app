@@ -4,7 +4,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import classes from './BeerItem.module.css';
 import barrelImage from 'assets/images/barrel.png'
 
-const Beer = (props) => {
+const BeerItem = (props) => {
     const history = useHistory();
 
     const handleClick = () => {
@@ -41,5 +41,4 @@ const Beer = (props) => {
     );
 };
 
-export default Beer;
-
+export default BeerItem;

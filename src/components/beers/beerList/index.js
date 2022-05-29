@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import BeerItem from '../beerItem';
+import BeerItem from "../beerItem";
 import EndMessage from "../beerMessages/endMessage";
 import Loader from "../beerMessages/loader";
 import { fetchBeersList, searchBeerName} from "services/beerService";
@@ -67,5 +67,3 @@ const BeersList = ({ filters }) => {
 };
 
 export default BeersList;
-
-
